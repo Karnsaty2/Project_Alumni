@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import EventCard from './EventCard'
-
+import {HiOutlineArrowNarrowRight ,HiOutlineUpload  } from "react-icons/hi";
 function Home() {
   return (
     <>
     <div className='bg-[url("landing-page-img.jpg")] h-screen bg-cover bg-top mt-16 '>
       <div className='h-screen bg-black/40 '></div>
-      <div className='absolute top-44 left-44 w-[600px]'>
+      <div className='absolute top-52 left-44 w-[600px] flex flex-col gap-8 items-start'>
         <h2 className='text-7xl font-bold text-white '>Connect & Grow</h2>
-        <p className='text-lg text-white w-[500px] my-10'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nostrum recusandae iusto ad? Rerum magni voluptatibus sequi error, culpa nesciunt consequatur eum beatae repellendus impedit, eligendi aspernatur cumque illum facere enim qui iste in molestias dolor libero eveniet. Sit, doloremque.</p>
-        <Link className='bg-white py-2 px-8 rounded-md border-2 border-transparent text-primary font-semibold  hover:border-white hover:bg-transparent hover:text-white transition duration-500'>Explore</Link>
+        <p className='text-lg text-white w-[500px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nostrum recusandae iusto ad? Rerum magni voluptatibus sequi error, culpa nesciunt consequatur eum beatae repellendus impedit, eligendi aspernatur cumque illum facere enim qui iste in molestias dolor libero eveniet. Sit, doloremque.</p>
+        <Link className='bg-white py-2 px-8 rounded-md border-2 border-transparent text-primary font-semibold  hover:border-white hover:bg-transparent hover:text-white transition duration-500 flex items-center gap-2'>Explore <HiOutlineArrowNarrowRight className='text-xl' /></Link>
       </div>
     </div>
     <div className='h-screen bg-[#dbeafe] flex flex-col items-center justify-evenly'>
@@ -35,8 +35,8 @@ function Home() {
           <img className='object-cover h-[450px] w-[300px] rounded-xl' src="https://media.istockphoto.com/id/1456220037/photo/graduation-at-the-university.jpg?s=612x612&w=0&k=20&c=IDTDT8iwuV1-Z9ZWfkKh5Ke2q5gHAcTQZbhmMWzR3Ac=" alt="" />
         </div>
         <div className='flex gap-4'>
-          <Link className='py-2 px-5 rounded-md font-semibold border-2 bg-primary border-transparent  text-white hover:bg-transparent hover:border-primary hover:text-primary transition duration-500'>View Full Gallery</Link>
-          <Link className=' py-2 px-5 rounded-md border-2 border-primary text-primary font-semibold hover:border-transparent hover:bg-primary hover:text-white transition duration-500'>Upload A Memory</Link>
+          <Link className='py-2 px-5 rounded-md font-semibold border-2 bg-primary border-transparent  text-white hover:bg-transparent hover:border-primary hover:text-primary transition duration-500 flex items-center gap-2'>View Full Gallery <HiOutlineArrowNarrowRight className='text-xl'/> </Link>
+          <Link className=' py-2 px-5 rounded-md border-2 border-primary text-primary font-semibold hover:border-transparent hover:bg-primary hover:text-white transition duration-500 flex items-center gap-2'>Upload A Memory <HiOutlineUpload /></Link>
         </div>
       </div>
     </>

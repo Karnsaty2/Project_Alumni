@@ -1,6 +1,7 @@
 import React from 'react'
 import Timer from './Timer'
 
+import { HiUserAdd,HiBell  } from "react-icons/hi";
 function EventCard() {
   return (
     <>
@@ -14,8 +15,8 @@ function EventCard() {
           </div>
           <Timer/>
           <div className='flex gap-4'>
-          <button className='py-2 px-5 rounded-md font-semibold border-2 bg-primary border-transparent  text-white hover:bg-transparent hover:border-primary hover:text-primary transition duration-500'>Register</button>
-          <button className=' py-2 px-5 rounded-md border-2 border-primary text-primary font-semibold hover:border-transparent hover:bg-primary hover:text-white transition duration-500'>Set Reminder</button>
+          <button className='py-2 px-5 rounded-md font-semibold border-2 bg-primary border-transparent  text-white hover:bg-transparent hover:border-primary hover:text-primary transition duration-500 flex items-center gap-2'><HiUserAdd className='text-xl' /> Register</button>
+          <button className=' py-2 px-5 rounded-md border-2 border-primary text-primary font-semibold hover:border-transparent hover:bg-primary hover:text-white transition duration-500 flex items-center gap-2'>Set Reminder <HiBell  className='text-xl'/></button>
           </div>
         </div>
       </div>
