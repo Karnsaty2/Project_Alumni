@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { HiUserAdd,HiOutlineArrowNarrowRight  } from "react-icons/hi";
+import link from '../assets/link.png'
 function Header() {
   return (
-    <div className='h-20 bg-primary flex items-center px-5 justify-between fixed top-0 w-full shadow-lg z-10'>
-      <p className='font-bold text-3xl text-white font-[cursive]'>Interact</p> 
+    <div className='h-20 bg-transparent backdrop-blur-2xl flex items-center px-5 justify-between fixed top-0 w-full   z-10 shadow-xl shadow-cyan-400'>
+     <div className='flex gap-2 items-center'>
+     <img className='h-8' src={link} alt="" />
+     <p className='font-bold text-3xl text-white font-[cursive]'>Connect</p> 
+     </div>
       <div className='flex items-center gap-4'>
-        <NavLink to='/' className={({isActive})=>`${isActive?'text-black':'text-white'} hover:text-black font-semibold transition duration-700 text-lg`}>Home</NavLink>
+        <NavLink to='/home' className={({isActive})=>`${isActive?'text-black':'text-white'} hover:text-black font-semibold transition duration-700 text-lg`}>Home</NavLink>
         <NavLink to='/events' className={({isActive})=>`${isActive?'text-black':'text-white'} hover:text-black font-semibold transition duration-700 text-lg`}>Events</NavLink>
         <NavLink to='/gallery' className={({isActive})=>`${isActive?'text-black':'text-white'} hover:text-black font-semibold transition duration-700 text-lg`}>Gallery</NavLink>
         <NavLink to='/about' className={({isActive})=>`${isActive?'text-black':'text-white'} hover:text-black font-semibold transition duration-700 text-lg`}>About Us</NavLink>

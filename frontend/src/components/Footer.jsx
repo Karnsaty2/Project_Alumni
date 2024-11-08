@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { FaTwitter,FaFacebook ,FaLinkedin} from "react-icons/fa6";
 function Footer() {
   return (
-    <div className='h-80 bg-primary flex items-center p-20  justify-evenly'>
+    <div className='h-80 bg-secondary flex items-center p-20  justify-evenly'>
       <img src="https://www.gla.ac.in/images/gla-university-logo.png" alt="" />
       <div className='text-gray-200 flex flex-col gap-2 '>
         <h4 className='font-bold text-white text-xl'>Quick Links</h4>
